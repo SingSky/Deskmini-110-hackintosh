@@ -1,6 +1,6 @@
 # Deskmini-110-hackintosh
 
-Deskmini110/COM hackintosh profile.
+Deskmini110/COM hackintosh EFI profile, Thanks to [dortania opencore tutorial](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites).
 
 ### Hardware
 
@@ -12,22 +12,26 @@ Wi-Fi and bluetooth card: None
 
 Both opencore and clover are supported, the latest system tested is Catalina 10.15.2.
 
+**Update**: Opencore 060 has been updated, GUI boot device selector, USB mapping, nvme fix and lots of patches are added, the lastest system tested is Catalina 10.15.6.
+
 ### What will work
 
 * 4k display support **on DP port**
 * Audio 
 * USB
 * Ethernet
+* **Sleep**
 * Other trivial system functions
 
 ### What have not been tested
 
-* Sleep 
 * HDMI 
+* VGA
+* Airdrop (In theory, it will work if you insert Apple original cards since all the kexts needed are present here)
 
 # Warning
 
-I have tested them on my build. However, specific hardware differs, I do not guarantee these EFI will boot system successfully in every build, use them at your own risk.
+I have tested them on my build. However, specific hardware differs, I do not guarantee these EFI will boot system successfully in every build, please use them at your own risk.
 
 ### Usage
 
@@ -37,7 +41,7 @@ Catalina and Mojave are different in many aspects, these EFI are not tested unde
 
 ### Others
 
-The EFI here **doesn't contain** any kext for Wi-Fi and bluetooth cards and SMBIOS information. Please find suitable kexts for Wi-Fi cards to work and generate your own valid SMBIOS to be able to use iMessage and FaceTime.
+The EFI here **doesn't contain**  SMBIOS information. Please generate your own valid SMBIOS to be able to use iMessage and FaceTime, [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) is recommended.
 
 ### Some explanations
 
