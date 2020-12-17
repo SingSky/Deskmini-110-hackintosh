@@ -1,4 +1,6 @@
-# Deskmini-110-hackintosh
+# Deskmini-110-hackintosh(Deprecated）
+
+**This repository won't get further updated**
 
 Deskmini110/COM hackintosh EFI profile, Thanks to [dortania opencore tutorial](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites).
 
